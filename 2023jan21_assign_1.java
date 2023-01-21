@@ -13,7 +13,7 @@ public class assignment_jdbc {
 	// JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/db_world";
     private static final String user = "root";
-    private static final String password = "SipoczPeti99";
+    private static final String password = "XXXXXXXX";
     
     Connection con;
     PreparedStatement prSt;
