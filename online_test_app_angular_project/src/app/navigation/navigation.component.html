@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light mb-4">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Quiz App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav me-auto">
+      <!--
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <span *ngIf="is_session_active == true; else notLoggedIn2">
+          <a class="nav-link" routerLink="/welcome">Home</a>
+        </span>
+        <ng-template #notLoggedIn2>
+          <a class="nav-link" routerLink="/">Home</a>
+        </ng-template>
+      </li>
+      <li class="nav-item">
+        <span *ngIf="is_session_active && is_admin_user">
+          <a class="nav-link" href="/registered-users">Registerd Users</a>
+        </span>
+      </li>
+      <!--
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      -->
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <span *ngIf="is_session_active != true; else notLoggedIn">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </span>
+        <ng-template #notLoggedIn>
+          <input
+            type="button"
+            value="Logout"
+            class="btn btn-warning"
+            (click)="logout()"
+          />
+        </ng-template>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/registration">Registration</a>
+      </li>
+    </ul>
+  </div>
+</nav>

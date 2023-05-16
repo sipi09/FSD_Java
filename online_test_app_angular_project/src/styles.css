@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+input.ng-touched.ng-valid, select.ng-touched.ng-valid {
+    border: 1px green solid;
+}
+
+input.ng-touched.ng-invalid, select.ng-touched.ng-invalid {
+    border: 1px red solid;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size:10px;
+}

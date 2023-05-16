@@ -1,0 +1,15 @@
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .col-md-2,
+  .col-md-8 {
+    flex: 1;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 0.5rem;
+  }

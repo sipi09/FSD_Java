@@ -1,0 +1,61 @@
+<app-navigation></app-navigation>
+<div class="container-fluid pt-5">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info">
+          <b>Login</b>
+        </div>
+        <div class="card-body">
+          <form #formLogin="ngForm">
+            <label>Email</label>
+            <input
+              type="email"
+              class="form-control"
+              [(ngModel)]="email"
+              name="email"
+              #em="ngModel"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
+            />
+            <span class="error" *ngIf="em.touched && em.errors?.['required']">
+              Username is required
+            </span>
+            <span class="error" *ngIf="em.touched && em.errors?.['pattern']">
+              Invalid username
+            </span>
+
+            <br />
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              [(ngModel)]="password"
+              name="password"
+              #pwd="ngModel"
+              required
+            />
+            <span class="error" *ngIf="pwd.touched && pwd.invalid">
+              Password is required
+            </span>
+
+            <br />
+            <br />
+            <input
+              type="button"
+              value="Login"
+              class="btn btn-success"
+              [disabled]="formLogin.form.invalid"
+              (click)="CheckLoginDetails(formLogin)"
+            />
+          </form>
+
+          <br />
+          <!-- <h3>{{ msg }}</h3> -->
+          <div [innerHTML]="msg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <h1>Quiz</h1>
+  <p class="lead">Question {{ currentQuestionIndex + 1 }}:</p>
+  <p>{{ question?.question }}</p>
+  <form (ngSubmit)="onQuesionSubmit()">
+    <div class="form-check" *ngFor="let opt of options">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="answer"
+        [id]="'answer' + opt"
+        [value]="opt"
+        [(ngModel)]="selectedAnswer"
+      />
+      <label class="form-check-label" [for]="'answer' + opt">{{ opt }}</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>

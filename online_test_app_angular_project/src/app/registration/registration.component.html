@@ -1,0 +1,130 @@
+<app-navigation></app-navigation>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info">
+          <b>Registration</b>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="UserRegForm" (ngSubmit)="onFormSubmit()">
+            <!--
+            <label>ID</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="id"
+              name="id"
+            />
+            -->
+            <label>Name</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="fullname"
+              name="fullname"
+              ngDefaultControl
+            />
+            <span
+              class="error"
+              *ngIf="
+                UserRegForm.controls['fullname'].errors && isValidFormSubmitted
+              "
+            >
+              <span
+                *ngIf="UserRegForm.controls['fullname'].errors['required']"
+                class="error"
+                >Name is required.
+              </span>
+              <span
+                *ngIf="UserRegForm.controls['fullname'].errors['pattern']"
+                class="error"
+                >Name can only contain alphabetic characters.
+              </span>
+              <span
+                *ngIf="UserRegForm.controls['fullname'].errors['minLength']"
+                class="error"
+                >Name has to be minimum 5 characters.
+              </span>
+            </span>
+            <br />
+            <label>Email (username)</label>
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              name="email"
+            />
+
+            <span
+              class="error"
+              *ngIf="
+                UserRegForm.controls['email'].errors && isValidFormSubmitted
+              "
+            >
+              <span
+                *ngIf="UserRegForm.controls['email'].errors['required']"
+                class="error"
+                >Email is required.
+              </span>
+              <span
+                *ngIf="UserRegForm.controls['email'].errors['pattern']"
+                class="error"
+                >Email has to be email format.
+              </span>
+            </span>
+            <br />
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+              name="password"
+            />
+            <span
+              class="error"
+              *ngIf="
+                UserRegForm.controls['password'].errors && isValidFormSubmitted
+              "
+            >
+              Password is required and it has to be a minimum of 6 characters.
+            </span>
+            <br />
+            <label>Password again</label>
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password_again"
+              name="password_again"
+            />
+            <span
+              class="error"
+              *ngIf="
+                UserRegForm.controls['password_again'].errors &&
+                isValidFormSubmitted
+              "
+            >
+              Password again is required and it has to be a minimum of 6
+              characters.
+            </span>
+            <span
+              class="error"
+              *ngIf="
+                UserRegForm.hasError('passwordMismatch') && isValidFormSubmitted
+              "
+            >
+              Passwords do not match.
+            </span>
+
+            <br /><br />
+            <input type="submit" value="Register" class="btn btn-success" />
+            <br />
+            <div [innerHTML]="msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

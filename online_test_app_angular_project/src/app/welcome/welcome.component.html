@@ -1,0 +1,51 @@
+<app-navigation></app-navigation>
+<!-- Welcome message -->
+<div class="container">
+  <h1>Welcome to Quiz App</h1>
+  <p class="lead">
+    Hello <span *ngIf="user">{{ user.fullname }}</span
+    >, <br />
+    Please select which quiz you want to play!
+  </p>
+  <form #formQuizStart="ngForm">
+    <div class="form-group row">
+      <label
+        for="quiz_selected"
+        class="col-form-label col-md-2"
+        style="text-align: right"
+        >Quiz</label
+      >
+      <div class="col-md-8">
+        <select
+          name="quiz_selected"
+          id="quiz_selected"
+          class="form-control"
+          [(ngModel)]="quiz_selected"
+          #qu="ngModel"
+          required
+        >
+          <option value="HTML">HTML</option>
+          <option value="Java">Java</option>
+          <option value="Angular">Angular</option>
+          <option value="Fovaros">Fővárosok</option>
+        </select>
+        <span class="error" *ngIf="qu.touched && qu.errors?.['required']">
+          Quiz has to be selected
+        </span>
+      </div>
+      <div class="col-md-2">
+        <input
+          type="submit"
+          value="START"
+          class="btn btn-outline-primary w-100"
+          [disabled]="formQuizStart.form.invalid"
+          (click)="QuizStart(formQuizStart)"
+        />
+      </div>
+    </div>
+  </form>
+  <img
+    src="../assets/images/quiz_image_1.jpeg"
+    style="width: 100%; height: 350px; margin-top: 20px"
+  />
+</div>

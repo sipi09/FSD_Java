@@ -1,0 +1,30 @@
+<table width="100%" border="1">
+  <tr>
+    <td style="text-align: center">
+      <h1>Quiz result</h1>
+      <hr />
+      <br />
+      <h2>Quiz: {{ quiz_type }}</h2>
+      <br />
+      <h2>Score: {{ score }}%</h2>
+      <div *ngIf="result == 'passed'; then temppass; else tempfail"></div>
+      <ng-template #temppass>
+        <h3 [ngClass]="cssclass">Congratulations, you passed!</h3>
+      </ng-template>
+      <ng-template #tempfail>
+        <h3 [ngClass]="cssclass">
+          Unfortunately you did not pass. Better Luck Next Time!
+        </h3>
+      </ng-template>
+      <br />
+      <label>Checkout quiz results</label>&nbsp;&nbsp;
+      <a class="button" routerLink="/user-results">Results</a>
+      <br />
+      Or
+      <br />
+      <label>Back to home page</label>&nbsp;&nbsp;
+      <a class="button" routerLink="/welcome">Home</a>
+      <br /><br />
+    </td>
+  </tr>
+</table>

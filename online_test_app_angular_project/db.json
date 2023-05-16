@@ -1,0 +1,499 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "fullname": "Peter",
+      "email": "sipoczpeti@gmail.com",
+      "password": "almafa123",
+      "admin": false
+    },
+    {
+      "id": 2,
+      "fullname": "Brigi",
+      "email": "embrigitta@gmail.com",
+      "password": "almafa123",
+      "admin": false
+    },
+    {
+      "id": 3,
+      "fullname": "Admin",
+      "email": "admin@admin.com",
+      "password": "almafa123",
+      "admin": true
+    },
+    {
+      "id": 4,
+      "fullname": "Nagy Imre",
+      "email": "nagyimi@gmail.com",
+      "password": "kortefa",
+      "admin": false
+    },
+    {
+      "id": 5,
+      "fullname": "Kiss Edina",
+      "email": "edina@gmail.com",
+      "password": "almafa",
+      "admin": false
+    },
+    {
+      "id": 6,
+      "fullname": "Kiss Krisztina",
+      "email": "kiss@gmail.com",
+      "password": "enekesmadar",
+      "admin": false
+    },
+    {
+      "id": 7,
+      "fullname": "Nagy Peter",
+      "email": "peti@nagy.hu",
+      "password": "valami",
+      "admin": false
+    },
+    {
+      "id": 8,
+      "fullname": "Test User",
+      "email": "test@user.com",
+      "password": "almafa123",
+      "admin": false
+    }
+  ],
+  "Questions": [
+    {
+      "id": 1,
+      "type": "HTML",
+      "question": "What is the purpose of HTML?",
+      "opt_1": "To add style and interactivity to web pages",
+      "opt_2": "To store and manage data",
+      "opt_3": "To create server-side logic",
+      "ans": "To structure and define the content of web pages"
+    },
+    {
+      "id": 2,
+      "type": "HTML",
+      "question": "What is an HTML element?",
+      "opt_1": "A block of code that performs a specific function",
+      "opt_2": "A visual representation of a web page",
+      "opt_3": "A container for a piece of content",
+      "ans": "A building block of an HTML document that defines a specific structure or content"
+    },
+    {
+      "id": 3,
+      "type": "HTML",
+      "question": "What is the difference between an HTML element and an HTML tag?",
+      "opt_1": "There is no difference, they are the same thing",
+      "opt_2": "An HTML element is a container for content, while an HTML tag is used to define its attributes",
+      "opt_3": "An HTML tag is a container for content, while an HTML element is used to define its attributes",
+      "ans": "An HTML element is a building block of an HTML document that defines a specific structure or content, while an HTML tag is used to define its attributes"
+    },
+    {
+      "id": 4,
+      "type": "HTML",
+      "question": "What is the syntax for creating an HTML comment?",
+      "opt_1": "<!--- comment -->",
+      "opt_2": "<comment> comment </comment>",
+      "opt_3": "<! comment>",
+      "ans": "<!-- comment -->"
+    },
+    {
+      "id": 5,
+      "type": "HTML",
+      "question": "What is the purpose of the <head> element in an HTML document?",
+      "opt_1": "To define the main content of the web page",
+      "opt_2": "To specify the title, metadata, and other information about the web page",
+      "opt_3": "To create links to external resources",
+      "ans": "To specify the title, metadata, and other information about the web page"
+    },
+    {
+      "id": 6,
+      "type": "HTML",
+      "question": "What is the difference between a block-level element and an inline element?",
+      "opt_1": "There is no difference, they both behave the same way",
+      "opt_2": "A block-level element takes up the full width of its parent container and creates a new line, while an inline element only takes up the space it needs and does not create a new line",
+      "opt_3": "An inline element takes up the full width of its parent container and creates a new line, while a block-level element only takes up the space it needs and does not create a new line",
+      "ans": "A block-level element takes up the full width of its parent container and creates a new line, while an inline element only takes up the space it needs and does not create a new line"
+    },
+    {
+      "id": 7,
+      "type": "HTML",
+      "question": "What does HTML stand for?",
+      "opt_1": "Hypertext Main Language",
+      "opt_2": "Hypertext Major Language",
+      "opt_3": "Hypertext Motion Links",
+      "ans": "Hypertext Markup Language"
+    },
+    {
+      "id": 8,
+      "type": "HTML",
+      "question": "What is the purpose of the <form> element in an HTML document?",
+      "opt_1": "To define the main content of the web page",
+      "opt_2": "To create links to external resources",
+      "opt_3": "To provide a container for user input",
+      "ans": "To provide a container for user input"
+    },
+    {
+      "id": 9,
+      "type": "HTML",
+      "question": "What is the difference between a GET request and a POST request?",
+      "opt_1": "There is no difference, they both behave the same way",
+      "opt_2": "A GET request retrieves data from the server, while a POST request sends data to the server to be processed",
+      "opt_3": "A POST request retrieves data from the server, while a GET request sends data to the server to be processed",
+      "ans": "A GET request retrieves data from the server, while a POST request sends data to the server to be processed"
+    },
+    {
+      "id": 10,
+      "type": "HTML",
+      "question": "What is the purpose of the <a> element in an HTML document?",
+      "opt_1": "To create a hyperlink to another web page or resource",
+      "opt_2": "To create a button that performs a specific function",
+      "opt_3": "To display an image or video",
+      "ans": "To create a hyperlink to another web page or resource"
+    },
+    {
+      "id": 11,
+      "type": "Java",
+      "question": "What is the default value of a boolean in Java?",
+      "opt_1": "0",
+      "opt_2": "null",
+      "opt_3": "true",
+      "ans": "false"
+    },
+    {
+      "id": 12,
+      "type": "Java",
+      "question": "What is the difference between an abstract class and an interface?",
+      "opt_1": "An interface can have static methods, while an abstract class cannot",
+      "opt_2": "An abstract class can have constructor, while an interface cannot",
+      "opt_3": "An abstract class can have non-abstract methods, while an interface cannot",
+      "ans": "A class can implement multiple interfaces, but can only extend one abstract class"
+    },
+    {
+      "id": 13,
+      "type": "Java",
+      "question": "What is the purpose of the 'this' keyword in Java?",
+      "opt_1": "To declare a variable that cannot be changed",
+      "opt_2": "To define a new class",
+      "opt_3": "To access a static method or variable",
+      "ans": "To refer to the current instance of a class"
+    },
+    {
+      "id": 14,
+      "type": "Java",
+      "question": "What is a constructor in Java?",
+      "opt_1": "A method that returns a value",
+      "opt_2": "A method that is used to declare variables",
+      "opt_3": "A method that is used to sort arrays",
+      "ans": "A method that is called when an object is created"
+    },
+    {
+      "id": 15,
+      "type": "Java",
+      "question": "What is the purpose of the 'final' keyword in Java?",
+      "opt_1": "To declare a method that cannot be overridden",
+      "opt_2": "To declare a variable that cannot be changed",
+      "opt_3": "To prevent a class from being subclassed",
+      "ans": "All of the above"
+    },
+    {
+      "id": 16,
+      "type": "Java",
+      "question": "What is the purpose of the 'static' keyword in Java?",
+      "opt_1": "To create a new instance of a class",
+      "opt_2": "To prevent a method from being overridden",
+      "opt_3": "To allow a method to be called from any class in the same package",
+      "ans": "To declare a method that can be called without an instance of the class"
+    },
+    {
+      "id": 17,
+      "type": "Java",
+      "question": "What is the purpose of the 'finally' block in a try-catch-finally statement in Java?",
+      "opt_1": "To catch an exception and handle it",
+      "opt_2": "To declare a variable that cannot be changed",
+      "opt_3": "To declare a new class",
+      "ans": "To execute code regardless of whether an exception is thrown or not"
+    },
+    {
+      "id": 18,
+      "type": "Java",
+      "question": "What is the difference between a private and a protected method in Java?",
+      "opt_1": "A private method can only be accessed from within the same package, while a protected method can also be accessed from outside the package",
+      "opt_2": "A private method cannot be overridden, while a protected method can be overridden",
+      "opt_3": "A private method is used to define a new class, while a protected method is used to define a new interface",
+      "ans": "A private method can only be accessed from within the same class, while a protected method can also be accessed from subclasses"
+    },
+    {
+      "id": 19,
+      "type": "Java",
+      "question": "What is the purpose of the 'super' keyword in Java?",
+      "opt_1": "To refer to the current instance of a class",
+      "opt_2": "To declare a variable that cannot be changed",
+      "opt_3": "To define a new class",
+      "ans": "To call a method or constructor in the parent class"
+    },
+    {
+      "id": 20,
+      "type": "Java",
+      "question": "What is a static initializer block in Java?",
+      "opt_1": "A block of code that is executed when an object is created",
+      "opt_2": "A block of code that is executed when a method is called",
+      "opt_3": "A block of code that is executed when a variable is declared",
+      "ans": "A block of code that is executed when a class is loaded"
+    },
+    {
+      "id": 21,
+      "type": "Angular",
+      "question": "What is Angular?",
+      "opt_1": "A programming language",
+      "opt_2": "A web server",
+      "opt_3": "A database management system",
+      "ans": "A front-end development framework"
+    },
+    {
+      "id": 22,
+      "type": "Angular",
+      "question": "Which version of Angular introduced Ivy?",
+      "opt_1": "Angular 7",
+      "opt_2": "Angular 8",
+      "opt_3": "Angular 10",
+      "ans": "Angular 9"
+    },
+    {
+      "id": 23,
+      "type": "Angular",
+      "question": "What is the purpose of the Angular CLI?",
+      "opt_1": "To help with server-side rendering",
+      "opt_2": "To manage database connections",
+      "opt_3": "To create and manage virtual environments",
+      "ans": "To automate common development tasks"
+    },
+    {
+      "id": 24,
+      "type": "Angular",
+      "question": "What is a component in Angular?",
+      "opt_1": "A function that returns a value",
+      "opt_2": "A directive that modifies the DOM",
+      "opt_3": "A module that contains multiple services",
+      "ans": "A building block for creating user interfaces"
+    },
+    {
+      "id": 25,
+      "type": "Angular",
+      "question": "What is the purpose of the NgModule decorator in Angular?",
+      "opt_1": "To define a new component",
+      "opt_2": "To define a new service",
+      "opt_3": "To define a new directive",
+      "ans": "To define a new module"
+    },
+    {
+      "id": 26,
+      "type": "Angular",
+      "question": "What is the purpose of the @ViewChild decorator in Angular?",
+      "opt_1": "To define a new view for a component",
+      "opt_2": "To inject a service into a component",
+      "opt_3": "To define a new input property for a component",
+      "ans": "To access a child component or DOM element from a parent component"
+    },
+    {
+      "id": 27,
+      "type": "Angular",
+      "question": "What is the purpose of the Angular Forms module?",
+      "opt_1": "To provide a way to create and manage HTTP requests in Angular",
+      "opt_2": "To provide a way to create and manage animations in Angular",
+      "opt_3": "To provide a way to create and manage routing in Angular",
+      "ans": "To provide a way to create and manage forms in Angular"
+    },
+    {
+      "id": 28,
+      "type": "Angular",
+      "question": "What is the purpose of the async pipe in Angular?",
+      "opt_1": "To create asynchronous code in Angular",
+      "opt_2": "To handle errors in asynchronous code in Angular",
+      "opt_3": "To convert synchronous code to asynchronous code in Angular",
+      "ans": "To simplify working with observables in Angular"
+    },
+    {
+      "id": 29,
+      "type": "Angular",
+      "question": "What is the purpose of the ngIf directive in Angular?",
+      "opt_1": "To create a new component in Angular",
+      "opt_2": "To modify the DOM in Angular",
+      "opt_3": "To create animations in Angular",
+      "ans": "To conditionally render elements in Angular"
+    },
+    {
+      "id": 30,
+      "type": "Angular",
+      "question": "What is the purpose of the ngFor directive in Angular?",
+      "opt_1": "To create a new component in Angular",
+      "opt_2": "To modify the DOM in Angular",
+      "opt_3": "To conditionally render elements in Angular",
+      "ans": "To loop over an array and render elements in Angular"
+    },
+    {
+      "id": 31,
+      "type": "Fovaros",
+      "question": "Mi Franciaországnak a fővárosa?",
+      "opt_1": "Monaco",
+      "opt_2": "Lipcse",
+      "opt_3": "Lyon",
+      "ans": "Párizs"
+    },
+    {
+      "id": 32,
+      "type": "Fovaros",
+      "question": "Mi UK fővárosa?",
+      "opt_1": "Moszkva",
+      "opt_2": "Tokió",
+      "opt_3": "Manchester",
+      "ans": "London"
+    },
+    {
+      "id": 33,
+      "type": "Fovaros",
+      "question": "Mi Ausztria a fővárosa?",
+      "opt_1": "Berlin",
+      "opt_2": "Bern",
+      "opt_3": "Oslo",
+      "ans": "Bécs"
+    },
+    {
+      "id": 34,
+      "type": "Fovaros",
+      "question": "Mi Spanyolországnak a fővárosa?",
+      "opt_1": "Washington D.C.",
+      "opt_2": "Roma",
+      "opt_3": "Lisszabon",
+      "ans": "Madrid"
+    },
+    {
+      "id": 35,
+      "type": "Fovaros",
+      "question": "Mi Portugália fővárosa?",
+      "opt_1": "Madrid",
+      "opt_2": "London",
+      "opt_3": "Roma",
+      "ans": "Lisszabon"
+    }
+  ],
+  "Results": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 75,
+      "result": "passed"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed"
+    },
+    {
+      "user_id": 1,
+      "type": "Java",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed",
+      "id": 3
+    },
+    {
+      "user_id": 7,
+      "type": "Java",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed",
+      "id": 4
+    },
+    {
+      "user_id": 7,
+      "type": "Angular",
+      "total_questions": 10,
+      "score": 60,
+      "result": "failed",
+      "id": 5
+    },
+    {
+      "user_id": 7,
+      "type": "Java",
+      "total_questions": 10,
+      "score": 70,
+      "result": "failed",
+      "id": 6
+    },
+    {
+      "user_id": 7,
+      "type": "Java",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed",
+      "id": 7
+    },
+    {
+      "user_id": 7,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 100,
+      "result": "passed",
+      "id": 8
+    },
+    {
+      "user_id": 7,
+      "type": "Fovaros",
+      "total_questions": 5,
+      "score": 100,
+      "result": "passed",
+      "id": 9
+    },
+    {
+      "user_id": 7,
+      "type": "Fovaros",
+      "total_questions": 5,
+      "score": 80,
+      "result": "passed",
+      "id": 10
+    },
+    {
+      "user_id": 7,
+      "type": "Fovaros",
+      "total_questions": 5,
+      "score": 60,
+      "result": "failed",
+      "id": 11
+    },
+    {
+      "user_id": 7,
+      "type": "Fovaros",
+      "total_questions": 5,
+      "score": 0,
+      "result": "failed",
+      "id": 12
+    },
+    {
+      "user_id": 7,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 80,
+      "result": "passed",
+      "id": 13
+    },
+    {
+      "user_id": 7,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed",
+      "id": 14
+    },
+    {
+      "user_id": 8,
+      "type": "HTML",
+      "total_questions": 10,
+      "score": 90,
+      "result": "passed",
+      "id": 15
+    }
+  ]
+}
